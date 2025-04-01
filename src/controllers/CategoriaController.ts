@@ -1,7 +1,7 @@
 import { Categoria } from "../models/Categoria";
 
 export class CategoriaController {
-    private categorias: Categoria[] =[];
+    private categorias: Categoria[] = [];
 
     criarCategoria(nome: string, descricao: string): void {
         const id = this.categorias.length + 1;
@@ -42,7 +42,7 @@ export class CategoriaController {
 
         if (categoriaIndex === -1) {
             console.log("Categoria não encontrada!");
-            return false;
+                return false;
         }
 
         //splice remove a categoria do array
