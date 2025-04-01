@@ -5,9 +5,12 @@ export class ProdutoController {
     private produtos: Produto[] = [];
     private categorias: Categoria[];
 
-    constructor(categorias: Categoria[]){
+    constructor(categorias: Categoria[] = []){
+        this.produtos = [];
         this.categorias = categorias;
     }
+
+    
 
     criarProduto(nome: string, descricao: string, preco: number, quantidade: number, categoriaId: number): void {
 
